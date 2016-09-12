@@ -1,6 +1,15 @@
 nav {
   height: 100px;
   background-color: #d7c078;
+  font-family: 'Bungee', 'cursive';
+}
+
+nav > img {
+  height: 75%;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  padding-top: 10px;
 }
 
 .card {
@@ -20,5 +29,10 @@ nav {
 }
 
 .character {
-  font-weight: 700;
+  font-weight: 500;
+  font-family: 'Bungee', 'cursive';
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
 }
