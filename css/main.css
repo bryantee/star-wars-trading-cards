@@ -6,6 +6,8 @@ nav {
 .card {
   border: 1px lightgrey solid;
   border-radius: 2px;
+  margin-bottom: 10px;
+  min-height: 418px;
 }
 
 .card > img {
