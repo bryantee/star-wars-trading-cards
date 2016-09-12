@@ -4,7 +4,7 @@ by Bryan
 -- with the help of the internet
 */
 
-.grid-container * {
+* {
   box-sizing: border-box;
 }
 
@@ -12,6 +12,7 @@ by Bryan
   width: 100%;
   max-width: 1000px;
   padding: 20px;
+  margin: 0 auto;
 }
 
 [class*='col-'] {
