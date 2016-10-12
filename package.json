@@ -1,0 +1,23 @@
+{
+  "name": "star-wars-trading-cards",
+  "version": "1.0.0",
+  "description": "grids responsive less design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryantee/responsive-grid-example-and-challenge-starter-files.git"
+  },
+  "author": "Bryan Swagerty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryantee/responsive-grid-example-and-challenge-starter-files/issues"
+  },
+  "homepage": "https://github.com/bryantee/responsive-grid-example-and-challenge-starter-files#readme",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "less": "^2.7.1"
+  }
+}
