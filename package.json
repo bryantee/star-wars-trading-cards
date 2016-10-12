@@ -4,6 +4,18 @@
   "description": "grids responsive less design",
   "main": "index.js",
   "scripts": {
+    "mkdir": "mkdir -p build",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:images",
+    "clean": "rm -rf build",
+    "watch": "npm run watch:html & npm run watch:css",
+    "build:css": "npm run clean:css && lessc --source-map css/main.less build/$npm_package_name.$npm_package_version.css && cp css/*.css build/",
+    "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'",
+    "clean:css": "rm -f build/$npm_package_name.$npm_package_version.css build/$npm_package_name.$npm_package_version.css.map && rm -fr build/*.css",
+    "clean:html": "rm -f build/*.html",
+    "build:html": "cp *.html build/index.html",
+    "watch:html": "npm run build:html && chokidar *.html -c 'npm run build:html'",
+    "clean:images": "rm -fr build/images",
+    "build:images": "npm run clean:images && cp -R images/ build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
